@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -19,24 +21,39 @@ export default function Footer() {
             </div>
           </div>
           <p className="footer-text">
-            Kombinasi kurikulum diniyah, tahfidz, dan pendidikan
-            modern untuk menyiapkan santri siap mengabdi di tengah
-            masyarakat.
+            Kombinasi kurikulum diniyah, tahfidz, dan pendidikan modern untuk
+            menyiapkan santri siap mengabdi di tengah masyarakat.
           </p>
         </div>
 
-        {/* Kolom tengah: link singkat */}
+        {/* Kolom tengah: link cepat */}
         <div className="footer-col">
           <h4 className="footer-title">Tautan Cepat</h4>
           <ul className="footer-list">
-            <li>Profil Pesantren</li>
-            <li>Program Tahfidz</li>
-            <li>Kegiatan Santri</li>
-            <li>Pendaftaran Santri Baru</li>
+            <li>
+              <Link to="/about" className="footer-link">
+                Profil Pesantren
+              </Link>
+            </li>
+            <li>
+              <Link to="/posts?category=program" className="footer-link">
+                Program Tahfidz
+              </Link>
+            </li>
+            <li>
+              <Link to="/posts?category=kegiatan" className="footer-link">
+                Kegiatan Santri
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="footer-link">
+                Pendaftaran Santri Baru
+              </Link>
+            </li>
           </ul>
         </div>
 
-        {/* Kolom kanan: kontak & sosmed fake */}
+        {/* Kolom kanan: kontak & sosial media */}
         <div className="footer-col footer-col-contact">
           <h4 className="footer-title">Kontak & Lokasi</h4>
           <p className="footer-text">
@@ -50,12 +67,37 @@ export default function Footer() {
           <div className="footer-social">
             <span className="footer-social-label">Ikuti kami:</span>
             <div className="footer-social-badges">
-              <span className="footer-badge">Facebook</span>
-              <span className="footer-badge">Instagram</span>
-              <span className="footer-badge">YouTube</span>
-              <span className="footer-badge">Tiktok</span>
-              <span className="footer-badge">Thread</span>
-              <span className="footer-badge">Twitter</span>
+
+              {/* FACEBOOK */}
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-badge"
+              >
+                Facebook
+              </a>
+
+              {/* INSTAGRAM */}
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-badge"
+              >
+                Instagram
+              </a>
+
+              {/* YOUTUBE */}
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-badge"
+              >
+                YouTube
+              </a>
+
             </div>
           </div>
         </div>
