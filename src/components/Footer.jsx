@@ -30,27 +30,28 @@ export default function Footer() {
         <div className="footer-col">
           <h4 className="footer-title">Tautan Cepat</h4>
           <ul className="footer-list">
-            <li>
-              <Link to="/about" className="footer-link">
-                Profil Pesantren
-              </Link>
-            </li>
-            <li>
-              <Link to="/posts?category=program" className="footer-link">
-                Program Tahfidz
-              </Link>
-            </li>
-            <li>
-              <Link to="/posts?category=kegiatan" className="footer-link">
-                Kegiatan Santri
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="footer-link">
-                Pendaftaran Santri Baru
-              </Link>
-            </li>
-          </ul>
+  <li>
+    <Link to="/about" className="footer-link">
+      Profil Pesantren
+    </Link>
+  </li>
+  <li>
+    <Link to="/posts?category=program" className="footer-link">
+      Program Pendidikan
+    </Link>
+  </li>
+  <li>
+    <Link to="/agenda" className="footer-link">
+      Kegiatan & Agenda
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" className="footer-link">
+      Pendaftaran Santri Baru
+    </Link>
+  </li>
+</ul>
+
         </div>
 
         {/* Kolom kanan: kontak & sosial media */}
