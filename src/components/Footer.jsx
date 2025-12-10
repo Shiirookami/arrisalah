@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <h4 className="footer-title">Pondok Pesantren Modern Ar-Risalah</h4>
           <p className="footer-text">
-            Jl. Pendidikan No. 1, Desa Ilmu, Kecamatan Barokah, Indonesia
+            Jl. Jangari, Desa Hegarmanah, Kecamatan Sukaluyu, Cianjur, Indonesia
           </p>
           <p className="footer-text">
             Telp: (0263) 123456 • Email: info@arrisalah.sch.id
